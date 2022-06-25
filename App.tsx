@@ -1,10 +1,12 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
 import 'react-native-gesture-handler';
 import 'intl';
 import 'intl/locale-data/jsonp/pt-BR';
 import AppLoading from 'expo-app-loading';
 import { ThemeProvider } from 'styled-components';
 import { NavigationContainer } from '@react-navigation/native'
+import { AppRoutes } from './src/routes/app.routes';
 import {
   useFonts,
   Poppins_400Regular,
@@ -12,7 +14,6 @@ import {
   Poppins_700Bold
 } from '@expo-google-fonts/poppins';
 import theme from './src/global/styles/theme';
-import { AppRoutes } from './src/routes/app.routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -28,6 +29,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
+        <StatusBar barStyle='light-content' />
         <AppRoutes />
       </NavigationContainer>
     </ThemeProvider>
