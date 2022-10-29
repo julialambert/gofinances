@@ -1,6 +1,6 @@
 ### GoFinance
 
-Aplicação Expo desenvolvida em React Native usando TypeScript
+Expo application developed in React Native using TypeScript
 ![App Screenshot](.github/cover.png)
 
 
@@ -16,7 +16,7 @@ Google Credentials (https://console.cloud.google.com/)
     REDIRECT_URI=
 
 
-Principais pacotes extra instalados
+Installed extra packages
 - expo-font
 - @expo-google-fonts/poppins
 - expo-app-loading
@@ -36,9 +36,9 @@ Principais pacotes extra instalados
 - [expo-auth-session](https://docs.expo.dev/versions/latest/sdk/auth-session/)
 - expo-random
 
-Nesta aplicação utilizamos de forma inteligente e dinâmica o styled-components 
-para customizar as classes que estilo, focando na reutilização do código. 
+In this application we intelligently and dynamically use styled-components
+to customize the classes I style, focusing on code reuse. 
 
 #### UI Avatars https://ui-avatars.com/
 
-Utilizado para substituir a imagem do avatar do usuário quando não existe uma picture obtida do perfil de login.
+Used to replace the user's avatar image when there is no picture taken from the login profile.
